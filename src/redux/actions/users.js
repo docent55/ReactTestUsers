@@ -29,7 +29,7 @@ export const loginUser = (email, password) => async (dispatch) => {
         }
     }
     catch (e) {
-        alert('Не верные данные');
+        alert('invalid data');
     }
 };
 
@@ -54,6 +54,6 @@ export const createUser = (email, password) => async (dispatch) => {
     }
 }
     catch (error) { 
-        alert('Попробуйте другой email или проверте ваш пароль.');
+        alert('Error');
     }
 }

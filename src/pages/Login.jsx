@@ -23,12 +23,12 @@ const Login = () => {
         <div className='form-container container'>
             <form className='form' onSubmit={handleSubmit}>
                 <h1 className='form__title'>Login</h1>
-                {(email.isDirty && email.isEmpty) && <div style={{color: 'red'}}>pusto</div>}
-                {(email.isDirty && email.minLengthError) && <div style={{color: 'red'}}>malo</div>}
-                {(email.isDirty && email.emailError) && <div style={{color: 'red'}}>emailError</div>}
+                {(email.isDirty && email.isEmpty) && <div style={{color: 'red'}}>Данное поле не может быть пустым</div>}
+                {(email.isDirty && email.minLengthError) && <div style={{color: 'red'}}>Мало символов</div>}
+                {(email.isDirty && email.emailError) && <div style={{color: 'red'}}>Это не может быть адресом почты</div>}
                 <input className='form__input' onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} value={email.value} name='email' type='text' placeholder='Enter email'></input>
-                {(password.isDirty && password.isEmpty) && <div style={{color: 'red'}}>pusto</div>}
-                {(password.isDirty && password.minLengthError) && <div style={{color: 'red'}}>malo</div>}
+                {(password.isDirty && password.isEmpty) && <div style={{color: 'red'}}>Данное поле не может быть пустым</div>}
+                {(password.isDirty && password.minLengthError) && <div style={{color: 'red'}}>Мало символов</div>}
                 <input className='form__input' onChange={e => password.onChange(e)} onBlur={e =>password.onBlur(e)} value={password.value} name='password' type='password' placeholder='Enter password'></input>
                 <button
                 disabled={!email.inputValid || !password.inputValid}
