@@ -1,0 +1,40 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fff;
+
+    &__title {
+        
+    }
+
+    input {
+        border: 1px solid #DFDFDF;
+        box-sizing: border-box;
+        border-radius: 20px;
+
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+        background: #363838;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 28px;
+        cursor: pointer;
+    }
+}
